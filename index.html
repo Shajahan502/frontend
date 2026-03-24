@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Missing Child AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Missing Child AI</h1>
+        <p class="subtitle">Global Identification & Recovery System</p>
+    </header>
+
+    <!-- AUTH -->
+    <section class="card" id="auth">
+        <h2>Account Access</h2>
+        <input id="username" placeholder="Username">
+        <input id="password" type="password" placeholder="Password">
+        <button class="primary" onclick="login()">Login</button>
+        <button class="ghost" onclick="register()">Create Account</button>
+    </section>
+
+    <!-- UPLOAD -->
+    <section class="card hidden" id="uploadSection">
+        <h2>Report Missing Child</h2>
+        <input id="name" placeholder="Child Name">
+        <input id="contact" placeholder="Email Contact">
+        <input id="location" placeholder="Last Known Location">
+        <input type="file" id="image">
+        <button class="primary" onclick="upload()">Submit Case</button>
+    </section>
+
+    <!-- MATCH -->
+    <section class="card">
+        <h2>Face Match Scanner</h2>
+        <input type="file" id="matchImage">
+        <button class="accent" onclick="match()">Check Match</button>
+    </section>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
